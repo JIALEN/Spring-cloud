@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 //通过注解@EnableEurekaClient 表明自己是一个eurekaclient.
 @EnableEurekaClient
 //启用feign进行远程调用
-@EnableFeignClients
+//@EnableFeignClients
 public class RibbonServiceApplication {
 
 	public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class RibbonServiceApplication {
 	 */
 	@Bean
 	@LoadBalanced
-	RestTemplate restTemplate() {
+    public 	RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
 }
