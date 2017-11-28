@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @SpringBootApplication
 //通过注解@EnableEurekaClient 表明自己是一个eurekaclient.
 @EnableEurekaClient
-public class EurekaClientApplication {
+public class App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaClientApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
 }

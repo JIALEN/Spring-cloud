@@ -20,16 +20,18 @@ public class HelloService {
 
     @Autowired
     RestTemplate restTemplate;
-    @Value("${consumerURL}")
-    private String consumerUrl;
+    @Value("${eurekaclientURL}")
+    private String eurekaclientURL;
+    @Value("${ribbonserviceproviderURL}")
+    private String ribbonserviceproviderURL;
 
     public String getAge(Integer age) {
-
         //打印一下到底调用的是哪个
         ServiceInstance serviceInstance = this.loadBalancerClient.choose("eureka-client");
         System.out.println("===" + ":" + serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":" + serviceInstance.getPort());
-
-        System.out.print(consumerUrl);
-        return restTemplate.getForObject("http://EUREKA-CLIENT/hello?age=" + age, String.class);
+        ServiceInstance serviceInstance2 = this.loadBalancerClient.choose("ribbon-service-provider");
+        System.out.println("===" + ":" + serviceInstance2.getServiceId() + ":" + serviceInstance2.getHost() + ":" + serviceInstance2.getPort());
+        restTemplate.getForObject(ribbonserviceproviderURL + age, String.class);
+        return restTemplate.getForObject(eurekaclientURL + age, String.class);
     }
 }
