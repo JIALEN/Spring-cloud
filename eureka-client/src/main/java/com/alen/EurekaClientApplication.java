@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @SpringBootApplication
-//通过注解@EnableEurekaClient 表明自己是一个eurekaclient.
+//通过注解@EnableEurekaClient 表明自己是一个eurekaclient. 使其具有服务发现的能力
 @EnableEurekaClient
 public class EurekaClientApplication {
 
