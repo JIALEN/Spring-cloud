@@ -25,7 +25,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 public class ConsumerUploadController {
 	// 设置要进行远程上传微服务调用的代理地址
-	public static final String UPLOAD_URL = "http://gateway-9501.com:9501/zuul/mldn-proxy/upload-proxy/upload";
+	public static final String UPLOAD_URL = "http://localhost:9501/zuul/mldn-proxy/upload-proxy/upload";
 	@RequestMapping(value = "/consumer/uploadPre", method = RequestMethod.GET)
 	public String uploadPre() {
 		return "upload";
@@ -34,12 +34,7 @@ public class ConsumerUploadController {
 	public @ResponseBody String upload(String name, MultipartFile photo) throws Exception {
 		if (photo != null) {
 			CloseableHttpClient httpClient = HttpClients.createDefault(); // 创建一个HttpClient对象
-			CredentialsProvider credsProvider = new BasicCredentialsProvider(); // 创建了一个具有认证访问的信息
-			Credentials credentials = new UsernamePasswordCredentials("zdmin",
-					"mldnjava"); // 创建一条认证操作信息
-			credsProvider.setCredentials(AuthScope.ANY, credentials); // 现在所有的认证请求都使用一个认证信息
 			HttpClientContext httpContext = HttpClientContext.create(); // 创建Http处理操作的上下文对象
-			httpContext.setCredentialsProvider(credsProvider);// 设置认证的提供信息
 			HttpPost httpPost = new HttpPost(UPLOAD_URL); // 设置要进行访问的请求地址
 			HttpEntity entity = MultipartEntityBuilder.create()
 					.addBinaryBody("photo", photo.getBytes(),

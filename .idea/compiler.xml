@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
+        <module name="config-server" />
+        <module name="eureka-client" />
+        <module name="eureka-server" />
+        <module name="feign-service" />
+        <module name="hystrix-service" />
+        <module name="hystrix-service-turbine" />
+        <module name="hystrix-turbine" />
+        <module name="microcloud-api" />
+        <module name="microcloud-consumer" />
+        <module name="microcloud-consumer-upload" />
+        <module name="microcloud-provider-dept" />
+        <module name="microcloud-provider-upload-8201" />
+        <module name="microcloud-security" />
+        <module name="microcloud-service" />
+        <module name="microcloud-zuul-gateway-9501" />
+        <module name="ribbon-service" />
+        <module name="ribbon-service-provider" />
+        <module name="zuul-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="feign-service" target="1.8" />
+      <module name="hystrix-service" target="1.8" />
+      <module name="hystrix-service-turbine" target="1.8" />
+      <module name="hystrix-turbine" target="1.8" />
+      <module name="microcloud-api" target="1.8" />
+      <module name="microcloud-consumer" target="1.8" />
+      <module name="microcloud-consumer-upload" target="1.8" />
+      <module name="microcloud-provider-dept" target="1.8" />
+      <module name="microcloud-provider-upload-8201" target="1.8" />
+      <module name="microcloud-security" target="1.8" />
+      <module name="microcloud-service" target="1.8" />
+      <module name="microcloud-zuul-gateway-9501" target="1.8" />
+      <module name="ribbon-service" target="1.8" />
+      <module name="ribbon-service-provider" target="1.8" />
+      <module name="spring-cloud" target="1.8" />
+      <module name="zuul-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

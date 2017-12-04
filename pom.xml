@@ -61,19 +61,6 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.31</version>
 		</dependency>
-
-		<dependency>
-			<groupId>com.alen</groupId>
-			<artifactId>microcloud-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.alen</groupId>
-			<artifactId>microcloud-service</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.alen</groupId>
-			<artifactId>microcloud-security</artifactId>
-		</dependency>
 </dependencies>
 
 
