@@ -56,6 +56,24 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-actuator</artifactId>
 	</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.31</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alen</groupId>
+			<artifactId>microcloud-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alen</groupId>
+			<artifactId>microcloud-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alen</groupId>
+			<artifactId>microcloud-security</artifactId>
+		</dependency>
 </dependencies>
 
 

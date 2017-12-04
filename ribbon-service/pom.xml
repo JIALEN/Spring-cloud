@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
     <artifactId>ribbon-service</artifactId>
-
+   <description>演示使用ribbion调用ribbon-service-provider</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
