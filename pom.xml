@@ -20,6 +20,8 @@
 		<module>microcloud-security</module>
 		<module>ribbon-service-provider</module>
 		<module>zuul-service</module>
+		<module>hystrix-turbine</module>
+		<module>hystrix-service-turbine</module>
 	</modules>
 	<packaging>pom</packaging>
 
